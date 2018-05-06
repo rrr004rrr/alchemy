@@ -36,13 +36,23 @@ public class ItemAssetMenu : ScriptableObject
         public String Description;
     }
 
-    public Item items = new Item
+    public Item items;
+
+    public void Awake()
     {
-        Name = "空氣",
-        Attributes = 0,
-        ItemLevel = 1,
-        sprite = null,
-        Description = "測試測試，這是空氣。"
-    };
+        Init(items);
+    }
+
+    public void Init (Item item)
+    {
+        item = new Item
+        {
+            Name = "空氣",
+            Attributes = 0,
+            ItemLevel = 1,
+            sprite = null,
+            Description = "初始化空氣。"
+        };
+    }
 }
 
