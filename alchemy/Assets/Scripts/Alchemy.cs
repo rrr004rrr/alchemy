@@ -8,7 +8,7 @@ public class Alchemy : MonoBehaviour {
     private AlchemySystem fAlchemySystem;
 
     #endregion
-
+    
     // Use this for initialization
     void Start () {
         fAlchemySystem = AlchemySystem.GetInstance();
@@ -187,7 +187,7 @@ public class Alchemy : MonoBehaviour {
                 }
             }
 
-            return resultIndex
+            return resultIndex;
         }
 
         #endregion
