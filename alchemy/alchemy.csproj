@@ -240,6 +240,7 @@
     <Compile Include="Assets\Scripts\ItemAssetMenu\ItemAssetMenu.cs" />
     <Compile Include="Assets\Scripts\RefineData.cs" />
     <Compile Include="Assets\Scripts\RefinePlace.cs" />
+    <Compile Include="Assets\Scripts\UI_Commom.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Resources\RefineData.txt" />
