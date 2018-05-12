@@ -30,7 +30,7 @@ public class ItemAssetMenu : ScriptableObject
         public int ItemLevel;
 
         //圖片
-        public Sprite sprite;
+        public Sprite Icon;
 
         //敘述
         public String Description;
@@ -50,7 +50,7 @@ public class ItemAssetMenu : ScriptableObject
             Name = "空氣",
             Attributes = 0,
             ItemLevel = 1,
-            sprite = null,
+            Icon = null,
             Description = "初始化空氣。"
         };
     }
