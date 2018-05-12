@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class UI_Commom : MonoBehaviour {
 
+    [Header("0 = Information , 1 = Map , 2 = Alchemy , 3 = Shop")]
     public List<Canvas> allCanvas = new List<Canvas>();
 
     private void Awake()
@@ -23,7 +24,7 @@ public class UI_Commom : MonoBehaviour {
     /// 開啟某頁面
     /// </summary>
     /// <param name="number">畫面編號</param>
-    void OpenCanvas (int number)
+    public void OpenCanvas (int number)
     {
         if (allCanvas.Count == 0)
         {
