@@ -9,22 +9,22 @@ public class UI_Commom : MonoBehaviour {
 
     private void Awake()
     {
-        OpenCanvas(0);
+        Open(0);
     }
 
     /// <summary>
     /// 初始化所有畫面,只顯示第一頁
     /// </summary>
-    void InitCanvas ()
-    {
-        OpenCanvas(0);
+    void Init ()
+    {        
+        Open(0);
     }
 
     /// <summary>
     /// 開啟某頁面
     /// </summary>
     /// <param name="number">畫面編號</param>
-    public void OpenCanvas (int number)
+    public void Open (int number)
     {
         if (allCanvas.Count == 0)
         {

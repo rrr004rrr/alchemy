@@ -11,7 +11,7 @@ public class ItemAssetMenu : ScriptableObject
     public class Item
     {
         //名字
-        public String Name;         
+        public String Name;
 
         /// <summary>
         /// 屬性
@@ -37,22 +37,7 @@ public class ItemAssetMenu : ScriptableObject
     }
 
     public Item items;
+    
 
-    public void Awake()
-    {
-        Init(items);
-    }
-
-    public void Init (Item item)
-    {
-        item = new Item
-        {
-            Name = "空氣",
-            Attributes = 0,
-            ItemLevel = 1,
-            Icon = null,
-            Description = "初始化空氣。"
-        };
-    }
 }
 
