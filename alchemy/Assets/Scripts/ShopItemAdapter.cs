@@ -4,21 +4,23 @@ using UnityEngine;
 
 public class ShopItemAdapter : MonoBehaviour {
 
-    public  RectTransform ShopItemPrefabs;
+    public  GameObject ShopItemPrefabs;
 
-    public RectTransform Content;
+    public Transform Content;
 
     public GameObject ScrollView;
+
+    public int Count = 20;
 
     /// <summary>
     /// 商店販賣物
     /// </summary>
-    private List<ItemAssetMenu.Item> shopItems;
+    private List<GameObject> shopItems;
 
 	// Use this for initialization
 	public void Start () {
-
-	}
+        initShopItems();
+    }
 	
 	// Update is called once per frame
 	public void Update () {
@@ -27,13 +29,12 @@ public class ShopItemAdapter : MonoBehaviour {
 
     private void initShopItems()
     {
-        shopItems = new List<ItemAssetMenu.Item>();
+        shopItems = new List<GameObject>();
 
-        foreach(ItemAssetMenu.Item item in shopItems)
+        for(int i =0; i < Count; i++)
         {
-            GameObject shopItem = Instantiate(ShopItemPrefabs.gameObject);
-            shopItem.transform.SetParent(Content, false);
-            //ScrollView.transform;
+            GameObject shopItem = Instantiate(ShopItemPrefabs,Content);
+            shopItems.Add(shopItem);
         }
     }
 
