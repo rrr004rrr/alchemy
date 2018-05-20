@@ -26,6 +26,7 @@ public class UI_Commom : MonoBehaviour {
     /// <param name="number">畫面編號</param>
     public void Open (int number)
     {
+        int num = 0;
         if (allCanvas.Count == 0)
         {
             return;
@@ -33,14 +34,16 @@ public class UI_Commom : MonoBehaviour {
 
         foreach (Canvas canvas in allCanvas)
         {
+            
             if (canvas != null)
             {
                 canvas.enabled = (canvas == allCanvas[number]) ? true : false;
             }
             else
             {
-                Debug.LogError("Mystery ==> canvas 是空的");
+                Debug.LogError("UI_Common/Open (開關頁面) ==> canvas ["+ num + "] 是空的");
             }
+            num++;
         }
     }
 }
