@@ -30,7 +30,7 @@ public class UI_Commom : MonoBehaviour {
         {
             DeleteCanvas();
             CreateCanvas();
-            Open(0);
+            Init();
             isRemakeCanvas = false;
         }
     }
