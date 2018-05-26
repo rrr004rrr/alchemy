@@ -1,8 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
+public class Shop
+{
+    public string city;
+    public int itemsMenu;
+}
 
 public class ShopItemAdapter : MonoBehaviour {
+
+    public List<ShopAssetMenu> ShopAssetMenus;
 
     public  GameObject ShopItemPrefabs;
 
@@ -19,7 +28,7 @@ public class ShopItemAdapter : MonoBehaviour {
 
 	// Use this for initialization
 	public void Start () {
-        initShopItems();
+        initShopItems("City_A");
     }
 	
 	// Update is called once per frame
@@ -27,15 +36,23 @@ public class ShopItemAdapter : MonoBehaviour {
 		
 	}
 
-    private void initShopItems()
+    private void initShopItems(string cityName)
     {
         shopItems = new List<GameObject>();
 
-        for(int i =0; i < Count; i++)
+        foreach (ShopAssetMenu m in ShopAssetMenus)
         {
-            GameObject shopItem = Instantiate(ShopItemPrefabs,Content);
-            shopItems.Add(shopItem);
+            if(m.name == cityName)
+            {
+                foreach(ItemAssetMenu i in m.item)
+                {
+                    GameObject shopItem = Instantiate(ShopItemPrefabs, Content);
+                    shopItem.transform.GetChild(1).GetChild(1).GetChild(0).GetComponent<Text>().text = i.item.Name;
+                    shopItems.Add(shopItem);
+                }            
+            }
         }
+        
     }
 
     public class ShopItemView

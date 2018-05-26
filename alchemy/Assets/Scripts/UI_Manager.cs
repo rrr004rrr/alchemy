@@ -13,7 +13,7 @@ public class UI_Manager : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        print(xx[2].item.Name);
+
     }
 	
 	// Update is called once per frame
