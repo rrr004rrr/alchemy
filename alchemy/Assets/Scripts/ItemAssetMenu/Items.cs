@@ -9,7 +9,7 @@ namespace Variable
         /// <summary>
         /// 名字
         /// </summary>
-        public string Name = "123";
+        public string Name = "名字";
 
         /// <summary>
         /// 屬性
@@ -19,17 +19,17 @@ namespace Variable
         /// <summary>
         /// 物品等級  (介於1~10)
         /// </summary>
-        public int ItemLevel = 7;
+        public int ItemLevel = 1;
 
         /// <summary>
         /// 圖片
         /// </summary>
-        public Sprite Icon = null;
+        public string Icon = "圖片";
 
         /// <summary>
         /// 敘述
         /// </summary>
-        public string Description = "WHO?";
+        public string Description = "這是敘述。";
     }
 }
 

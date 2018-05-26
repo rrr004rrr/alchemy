@@ -806,7 +806,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcc2cf6d0a88e90449fcc32a34921477, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ItemsInfo:
+  lstObj:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -857,7 +857,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  lstObj: []
   ItemPrefab: {fileID: 1984589310466698, guid: 80efc0469ff83bd4fa3f9069d761afa1, type: 2}
   Parent: {fileID: 224408101073370550}
 --- !u!114 &114889305955532492

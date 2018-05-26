@@ -5,5 +5,7 @@ using Variable;
 public class ItemAssetMenu : ScriptableObject
 {
     public Items item;
+
+    public int Price;
 }
 
