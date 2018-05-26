@@ -4,12 +4,63 @@ using UnityEngine;
 
 public class UI_Commom : MonoBehaviour {
 
+    [Header("打開自動產生畫面，測試畫面請勿打勾。")]
+    public bool isCreateCanvas = false;
+
+    [Header("重新產生畫面")]
+    public bool isRemakeCanvas = false;
+
     [Header("0 = Information , 1 = Map , 2 = Alchemy , 3 = Shop")]
-    public List<Canvas> allCanvas = new List<Canvas>();
+    public List<GameObject> canvasPrefabs = new List<GameObject>();
+    private List<Canvas> allCanvas = new List<Canvas>();
 
     private void Awake()
     {
+        //自動產生畫面
+        if (isCreateCanvas)
+        {
+            CreateCanvas();
+        }
         Open(0);
+    }
+
+    private void Update()
+    {
+        if (isRemakeCanvas)
+        {
+            DeleteCanvas();
+            CreateCanvas();
+            Open(0);
+            isRemakeCanvas = false;
+        }
+    }
+
+    /// <summary>
+    /// 生成畫面
+    /// </summary>
+    void CreateCanvas()
+    {
+        foreach (GameObject c in canvasPrefabs)
+        {
+            Canvas canvas = Instantiate(c).GetComponent<Canvas>();
+            canvas.gameObject.name = c.name;
+            allCanvas.Add(canvas);
+        }
+    }
+
+    /// <summary>
+    /// 清除畫面
+    /// </summary>
+    void DeleteCanvas()
+    {
+        foreach (Canvas canvas in allCanvas)
+        {
+            if(canvas != null)
+            {
+                Destroy(canvas.gameObject);
+            }
+        }
+        allCanvas.Clear();
     }
 
     /// <summary>

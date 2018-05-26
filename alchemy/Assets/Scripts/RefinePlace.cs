@@ -9,7 +9,7 @@ public class RefinePlace : MonoBehaviour {
 
     private void Start()
     {
-        print(ReadRefineData.ReadLine(0));
+        //print(ReadRefineData.ReadLine(0));
     }
 
 }

@@ -250,11 +250,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7371296d4d1a74246bcc9371c3bb8ae7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allCanvas:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  isCreateCanvas: 1
+  isRemakeCanvas: 0
+  canvasPrefabs:
+  - {fileID: 1044317110537646, guid: 680476a1e06899142a9de6490f20ffd3, type: 2}
+  - {fileID: 1988770504319402, guid: 13ff65630e7cd3e4b950e7b46bf8c834, type: 2}
+  - {fileID: 1497609238145992, guid: 64ff2c94875a5b049b383799f9acafe3, type: 2}
+  - {fileID: 1461851879894292, guid: 2dea63129fa6c2b4c9462672f1456824, type: 2}
 --- !u!114 &114111772183627932
 MonoBehaviour:
   m_ObjectHideFlags: 1
