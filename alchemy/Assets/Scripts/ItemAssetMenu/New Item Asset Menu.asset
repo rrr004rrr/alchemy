@@ -11,9 +11,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37820d2b3c259e14ca8724eb2da47b1f, type: 3}
   m_Name: New Item Asset Menu
   m_EditorClassIdentifier: 
-  items:
-    Name: 
-    Attributes: 0
-    ItemLevel: 0
+  item:
+    Name: 123
+    Arrtibute: 4
+    ItemLevel: 7
     Icon: {fileID: 0}
-    Description: 
+    Description: WHO?

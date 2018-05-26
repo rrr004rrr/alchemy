@@ -46,10 +46,10 @@ public class UI_Infomation : MonoBehaviour {
         foreach (ItemAssetMenu ItemAsset in ItemsInfo)
         {
 
-            if(ItemAsset.items.Name != lstObj[i].name)
-            {
-                return false;
-            }
+            //if(ItemAsset.items.Name != lstObj[i].name)
+            //{
+            //    return false;
+            //}
             i++;
         }
         return true;
