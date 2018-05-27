@@ -9,12 +9,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 37820d2b3c259e14ca8724eb2da47b1f, type: 3}
-  m_Name: ItemA
+  m_Name: ItemD
   m_EditorClassIdentifier: 
   item:
-    Name: ItemA
+    Name: wejirowejriw
     Arrtibute: 0
-    ItemLevel: 1
-    Icon: "\u5716\u7247"
-    Description: "\u9019\u662F\u6558\u8FF0\u3002"
-  Price: 0
+    ItemLevel: 10
+    Icon: 3
+    Description: "\u6558\u8FF02\uFF1A\u6211\u662F\u9053\u5177C\u3002"
+  Price: 75
